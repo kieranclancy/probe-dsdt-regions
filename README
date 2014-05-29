@@ -1,0 +1,15 @@
+WARNING:
+
+This program reads important areas of memory associated with the system's
+DSDT (Differentiated System Description Table).
+
+You MUST be sure that the regions specified in the DSDT match the regions
+specified in this program, or it will read the wrong areas of memory and may
+permanently destroy your machine. (Well, hopefully not, but I won't be
+responsible if it does.)
+
+Even if the regions do match the DSDT, there is still a risk that something
+can go wrong. I do not recommend modifiying this code to do anything other
+than read-only access to memory.
+
+Licensed under GPLv3 (see LICENSE file).
